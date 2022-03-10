@@ -1,0 +1,183 @@
+:root {
+  --prm-font: Poppins;
+  --big-font: 2.5625rem;
+  --prm-bg: rgb(79, 204, 106);
+  --font-color: #808080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--prm-font);
+}
+
+.--common {
+  /* background-color: var(--prm-bg); */
+  border-radius: 8px;
+}
+
+body {
+  background: #e27896; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e0cec4,
+    #eebbc8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f4e2d8,
+    #e4b0be
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#cont {
+  height: 450px;
+  width: 85%;
+  margin: 1% auto;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  gap: 1.5em;
+  border-radius: 8px;
+}
+
+.head {
+  text-align: center;
+  margin-top: 30px;
+  font-size: var(--big-font);
+}
+
+.btns {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#weather {
+  width: 18%;
+  height: 35px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 1px solid tomato;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#btn {
+  width: 12%;
+  height: 35px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#btn:hover {
+  color: white;
+  background: #e27896; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e0cec4,
+    #eebbc8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f4e2d8,
+    #e4b0be
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#btn:active {
+  transform: translateY(2px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#btn:focus {
+  border: 2px solid black;
+}
+
+#map {
+  display: grid;
+  place-items: center;
+  background-color: white;
+}
+
+iframe {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+}
+
+#wet {
+  padding: 30px;
+  font-size: 25px;
+  /* background: url(https://wallpapercave.com/wp/qQa5Pd7.jpg); */
+}
+
+/* Forcast style starts here */
+#wrapper {
+  display: grid;
+  width: 85%;
+  margin: 8% auto;
+  height: 180px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  grid-template-columns: repeat(8, 1fr);
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  /* place-items: center; */
+}
+
+#wrapper > div:nth-child(1) {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#wrapper > div:nth-child(8) {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-right: 0.5px solid white;
+}
+
+#wrapper h2 {
+  color: black;
+}
+
+.box {
+  /* border-radius: 10px; */
+  border: 0.5px solid white;
+  background-color: #282828;
+  /* border-left: none; */
+  border-right: none;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.day {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.max {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.min {
+  font-size: 14px;
+}
+
+#wrapper i {
+  color: #e24068;
+}
+
+.fa-2x {
+  display: grid;
+  place-items: center;
+}
